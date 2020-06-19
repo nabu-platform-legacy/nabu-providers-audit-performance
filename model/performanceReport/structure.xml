@@ -1,0 +1,19 @@
+<structure collectionName="performanceReports" name="performanceReport">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field name="service" type="java.lang.String"/>
+    <field minOccurs="0" name="serviceContext" type="java.lang.String"/>
+    <field minOccurs="0" name="correlationId" type="java.lang.String"/>
+    <field name="runId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field name="started" type="java.util.Date"/>
+    <field name="stopped" type="java.util.Date"/>
+    <field name="duration" type="java.lang.Long"/>
+    <field minOccurs="0" name="alias" type="java.lang.String"/>
+    <field minOccurs="0" name="realm" type="java.lang.String"/>
+    <field minOccurs="0" name="deviceId" type="java.lang.String"/>
+    <field minOccurs="0" name="errorCode" type="java.lang.String"/>
+    <field minOccurs="0" name="errorStack" type="java.lang.String"/>
+    <field minOccurs="0" name="errorMessage" type="java.lang.String"/>
+    <field minOccurs="0" name="errorServiceStack" type="java.lang.String"/>
+    <field minOccurs="0" name="parentId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field name="reportIndex" type="java.lang.Long"/>
+</structure>

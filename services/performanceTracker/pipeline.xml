@@ -1,0 +1,7 @@
+<structure interface="be.nabu.eai.module.auditing.api.FlatServiceTracker.track" name="pipeline">
+    <structure name="input"/>
+    <structure name="output"/>
+    <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" maxOccurs="unbounded" minOccurs="0" name="reports"/>
+    <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" minOccurs="0" name="current"/>
+    <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" minOccurs="0" name="report"/>
+</structure>
