@@ -1,0 +1,14 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<sql>select
+	pr.service,
+	avg(pr.duration) as average,
+	min(pr.duration) as minimum,
+	max(pr.duration) as maximum,
+	count(pr.id) as amount,
+	sum(pr.duration) as total
+from ~performance_reports pr
+where (:from is null or pr.started &gt;= :from)
+	and (:until is null or pr.started &lt;= :until)
+	and ((:rootOnly = true and pr.parent_id is null) or :rootOnly is null or :rootOnly = false)
+group by pr.service</sql>
+</jdbcService>

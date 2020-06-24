@@ -1,0 +1,4 @@
+<structure name="summaryList">
+    <structure definition="nabu.providers.audit.performance.database.performanceReport.summarize.results" maxOccurs="unbounded" minOccurs="0" name="summaries"/>
+    <structure definition="nabu.services.jdbc.types.Page" minOccurs="0" name="page"/>
+</structure>

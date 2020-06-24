@@ -1,0 +1,8 @@
+<structure name="result">
+    <field name="service" type="java.lang.String"/>
+    <field name="average" type="java.lang.Double"/>
+    <field name="minimum" type="java.lang.Long"/>
+    <field name="maximum" type="java.lang.Long"/>
+    <field name="amount" type="java.lang.Long"/>
+    <field name="total" type="java.lang.Long"/>
+</structure>

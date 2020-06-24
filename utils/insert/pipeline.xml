@@ -1,0 +1,8 @@
+<structure name="pipeline">
+    <structure name="input">
+        <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" maxOccurs="unbounded" minOccurs="0" name="reports"/>
+    </structure>
+    <structure name="output"/>
+    <field minOccurs="0" name="server" type="java.lang.String"/>
+    <field minOccurs="0" name="group" type="java.lang.String"/>
+</structure>

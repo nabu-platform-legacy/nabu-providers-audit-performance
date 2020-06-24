@@ -1,0 +1,4 @@
+<structure name="reportList">
+    <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" maxOccurs="unbounded" minOccurs="0" name="reports"/>
+    <structure definition="nabu.services.jdbc.types.Page" minOccurs="0" name="page"/>
+</structure>

@@ -5,5 +5,5 @@
     <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" minOccurs="0" name="current"/>
     <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" minOccurs="0" name="report"/>
     <structure collectionName="performanceReports" definition="nabu.providers.audit.performance.model.performanceReport" minOccurs="0" name="last"/>
-    <field minOccurs="0" name="amountOfReports" type="java.lang.Integer"/>
+    <field name="systemToken" type="java.lang.Boolean"/>
 </structure>

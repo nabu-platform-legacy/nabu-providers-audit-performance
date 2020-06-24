@@ -1,0 +1,19 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<outputDefinition>nabu.providers.audit.performance.model.performanceReport</outputDefinition>
+	<sql>select *
+from ~performance_reports pr
+where (:service is null or pr.service = :service)
+	and (:correlationId is null or pr.correlation_id = :correlationId)
+	and (:from is null or pr.started &gt;= :from)
+	and (:until is null or pr.started &lt;= :until)
+	and (:alias is null or pr.alias = :alias)
+	and (:runId is null or pr.run_id = :runId)
+	and (:parentId is null or pr.parent_id = :parentId)
+	and (:serverName is null or pr.server_name = :serverName)
+	and (:serverGroup is null or pr.server_group = :serverGroup)
+	and (:externalDependency is null or pr.external_dependency = :externalDependency)
+	and (:cached is null or pr.cached = :cached)
+	and (:errorOnly is null or :errorOnly = false or (:errorOnly = true and pr.error_code is not null))
+	and (:externalOnly is null or :externalOnly = false or (:externalOnly = true and pr.external_dependency is not null))
+	and (:rootOnly is null or :rootOnly = false or (:rootOnly = true and pr.parent_id is null))</sql>
+</jdbcService>
