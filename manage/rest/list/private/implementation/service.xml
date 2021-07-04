@@ -150,6 +150,15 @@
 				<from>input/query/alias</from>
 				<to>parameters/alias</to>
 			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="864d97e5-68a8-4b60-b476-73ab613c8041"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/query/minimumDuration</from>
+				<to>parameters/minimumDuration</to>
+			</steps>
 		</steps>
 		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
 				disabled="false"

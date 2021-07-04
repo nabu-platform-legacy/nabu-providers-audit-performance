@@ -4,8 +4,8 @@
     <field minOccurs="0" name="from" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="until" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="alias" type="java.lang.String"/>
-    <field minOccurs="0" name="runId" type="java.util.UUID"/>
-    <field minOccurs="0" name="parentId" type="java.util.UUID"/>
+    <field minOccurs="0" name="runId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field minOccurs="0" name="parentId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field minOccurs="0" name="serverName" type="java.lang.String"/>
     <field minOccurs="0" name="serverGroup" type="java.lang.String"/>
     <field minOccurs="0" name="externalDependency" type="java.lang.String"/>
@@ -13,4 +13,5 @@
     <field minOccurs="0" name="errorOnly" type="java.lang.Boolean"/>
     <field minOccurs="0" name="externalOnly" type="java.lang.Boolean"/>
     <field minOccurs="0" name="rootOnly" type="java.lang.Boolean"/>
+    <field minOccurs="0" name="minimumDuration" type="java.lang.Long"/>
 </structure>

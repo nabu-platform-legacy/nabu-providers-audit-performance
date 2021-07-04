@@ -15,5 +15,6 @@ where (:service is null or pr.service = :service)
 	and (:cached is null or pr.cached = :cached)
 	and (:errorOnly is null or :errorOnly = false or (:errorOnly = true and pr.error_code is not null))
 	and (:externalOnly is null or :externalOnly = false or (:externalOnly = true and pr.external_dependency is not null))
-	and (:rootOnly is null or :rootOnly = false or (:rootOnly = true and pr.parent_id is null))</sql>
+	and (:rootOnly is null or :rootOnly = false or (:rootOnly = true and pr.parent_id is null))
+	and (:minimumDuration is null or pr.duration &gt;= :minimumDuration)</sql>
 </jdbcService>

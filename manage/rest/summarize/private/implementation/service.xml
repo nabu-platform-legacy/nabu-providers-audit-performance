@@ -47,33 +47,6 @@
 		</steps>
 	</steps>
 	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
-			comment="Now"
-			disabled="false"
-			id="15dc833b46a3479cb03857770f619db6"
-			label="input/query/until = null">
-		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
-				disabled="false"
-				id="c78c7dad-aee9-423a-8cf0-67e3ed75698b"
-				serviceId="nabu.utils.Date.now"
-				resultName="result1b2d6d74f6574ea8bd21a93663716a64"
-				temporaryMapping="true"
-				x="31"
-				y="164"
-				invocationOrder="0"
-				asynchronous="false"
-				recache="false">
-		</steps>
-		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
-				disabled="false"
-				id="91e192d0-db7f-4bfd-b99e-b28266b4b833"
-				mask="false"
-				optional="false"
-				fixedValue="false">
-			<from>result1b2d6d74f6574ea8bd21a93663716a64/date</from>
-			<to>input/query/until</to>
-		</steps>
-	</steps>
-	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
 			comment="Search database"
 			disabled="false"
 			id="a16a590c-2e3d-4b50-9043-9a62e8d3aeaa">

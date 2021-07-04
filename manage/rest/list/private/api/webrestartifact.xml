@@ -2,7 +2,7 @@
 <restInterface>
     <method>GET</method>
     <path>/performance/report</path>
-    <queryParameters>from, until, orderBy, offset, limit, rootOnly, runId, service, serverName, correlationId, errorOnly, externalOnly, cached, alias</queryParameters>
+    <queryParameters>from, until, orderBy, offset, limit, rootOnly, runId, service, serverName, correlationId, errorOnly, externalOnly, cached, alias, minimumDuration</queryParameters>
     <role>manager</role>
     <output>nabu.providers.audit.performance.manage.rest.reportList</output>
     <lenient>false</lenient>

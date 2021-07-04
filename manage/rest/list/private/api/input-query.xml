@@ -13,4 +13,5 @@
     <field minOccurs="0" name="externalOnly" type="java.lang.Boolean"/>
     <field minOccurs="0" name="cached" type="java.lang.Boolean"/>
     <field minOccurs="0" name="alias" type="java.lang.String"/>
+    <field minOccurs="0" name="minimumDuration" type="java.lang.Long"/>
 </structure>
